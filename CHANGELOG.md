@@ -19,6 +19,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2026-02-12
+
+### Fixed
+
+- **CI/CD**: Added Integration test directory to fix CI pipeline
+  - Created `tests/Integration/.gitkeep` to ensure directory exists in CI
+  - Prevents "Test directory not found" error in GitHub Actions
+
+### Changed
+
+- **Documentation**: Updated CHANGELOG date format for consistency
+- **Repository**: Improved GitHub workflows and configuration
+
+---
+
 ## [1.0.0] - 2026-02-12
 
 ### 🎉 Initial Release
@@ -99,5 +114,6 @@ Inspired by:
 
 ---
 
-[Unreleased]: https://github.com/pixielity-co/stub-generator/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/pixielity-co/stub-generator/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/pixielity-co/stub-generator/releases/tag/v1.0.1
 [1.0.0]: https://github.com/pixielity-co/stub-generator/releases/tag/v1.0.0
