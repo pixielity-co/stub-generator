@@ -1,0 +1,58 @@
+# Automatic PR Labeling Configuration - Stub Generator
+
+"core":
+  - changed-files:
+      - any-glob-to-any-file: "src/StubGenerator.php"
+
+"exceptions":
+  - changed-files:
+      - any-glob-to-any-file: "src/Exceptions/**"
+
+"facade":
+  - changed-files:
+      - any-glob-to-any-file: "src/Facades/**"
+
+"tests: unit":
+  - changed-files:
+      - any-glob-to-any-file: "tests/Unit/**"
+
+"tests: integration":
+  - changed-files:
+      - any-glob-to-any-file: "tests/Integration/**"
+
+"tests: fixtures":
+  - changed-files:
+      - any-glob-to-any-file: "tests/fixtures/**"
+
+"quality: phpstan":
+  - changed-files:
+      - any-glob-to-any-file: "phpstan.neon"
+
+"quality: rector":
+  - changed-files:
+      - any-glob-to-any-file: "rector.php"
+
+"quality: pint":
+  - changed-files:
+      - any-glob-to-any-file: "pint.json"
+
+"documentation":
+  - changed-files:
+      - any-glob-to-any-file: "**/*.md"
+
+"dependencies: composer":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "composer.json"
+          - "composer.lock"
+
+"ci/cd: workflows":
+  - changed-files:
+      - any-glob-to-any-file: ".github/workflows/**"
+
+"github: config":
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/dependabot.yml"
+          - ".github/labeler.yml"
+          - ".github/CODEOWNERS"

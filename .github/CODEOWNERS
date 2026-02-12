@@ -1,0 +1,25 @@
+# CODEOWNERS - Stub Generator
+# Default owners for everything in the repository
+* @pixielity-co/maintainers
+
+# Core source code
+/src/ @pixielity-co/core-team
+
+# Tests
+/tests/ @pixielity-co/quality-team
+
+# Quality tools configuration
+/phpstan.neon @pixielity-co/quality-team
+/rector.php @pixielity-co/quality-team
+/pint.json @pixielity-co/quality-team
+/phpunit.xml @pixielity-co/quality-team
+
+# Dependency management
+/composer.json @pixielity-co/maintainers
+
+# GitHub configuration
+/.github/ @pixielity-co/maintainers
+
+# Documentation
+/*.md @pixielity-co/docs-team
+/SECURITY.md @pixielity-co/security-team

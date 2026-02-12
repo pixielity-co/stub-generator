@@ -1,0 +1,90 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Template pattern -->
+    <pattern id="templatePattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect x="10" y="10" width="60" height="60" fill="none" stroke="#3498db" stroke-width="0.5" opacity="0.15" rx="5"/>
+      <line x1="20" y1="25" x2="60" y2="25" stroke="#3498db" stroke-width="0.5" opacity="0.15"/>
+      <line x1="20" y1="35" x2="50" y2="35" stroke="#3498db" stroke-width="0.5" opacity="0.15"/>
+      <line x1="20" y1="45" x2="55" y2="45" stroke="#3498db" stroke-width="0.5" opacity="0.15"/>
+    </pattern>
+
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  <rect width="1200" height="300" fill="url(#templatePattern)"/>
+
+  <!-- Decorative elements -->
+  <g opacity="0.3">
+    <rect x="80" y="40" width="60" height="80" fill="none" stroke="#3498db" stroke-width="2" rx="5"/>
+    <rect x="1060" y="180" width="60" height="80" fill="none" stroke="#3498db" stroke-width="2" rx="5"/>
+  </g>
+
+  <!-- Template icon -->
+  <g transform="translate(200, 100)">
+    <!-- Document -->
+    <rect x="-40" y="-50" width="80" height="100" fill="#3498db" filter="url(#glow)" rx="5"/>
+    <rect x="-35" y="-45" width="70" height="90" fill="#2980b9" rx="3"/>
+
+    <!-- Lines representing text -->
+    <line x1="-25" y1="-30" x2="25" y2="-30" stroke="#ECF0F1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-25" y1="-15" x2="15" y2="-15" stroke="#ECF0F1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-25" y1="0" x2="20" y2="0" stroke="#ECF0F1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-25" y1="15" x2="10" y2="15" stroke="#ECF0F1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-25" y1="30" x2="25" y2="30" stroke="#ECF0F1" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Placeholder highlight -->
+    <rect x="-10" y="-5" width="20" height="10" fill="#F39C12" opacity="0.7" rx="2"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="300" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="bold" fill="#ECF0F1">
+    Stub
+  </text>
+
+  <!-- Generator text -->
+  <text x="300" y="180" font-family="'Courier New', monospace" font-size="48" font-weight="normal" fill="#3498db">
+    Generator
+  </text>
+
+  <!-- Tagline -->
+  <text x="300" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="300" fill="#BDC3C7">
+    Fluent template processor for PHP
+  </text>
+
+  <!-- Version badge -->
+  <g transform="translate(950, 100)">
+    <rect x="0" y="0" width="200" height="40" rx="20" fill="#3498db" opacity="0.2"/>
+    <rect x="0" y="0" width="200" height="40" rx="20" fill="none" stroke="#3498db" stroke-width="2"/>
+    <text x="100" y="27" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="600" fill="#3498db" text-anchor="middle">
+      v1.0.0
+    </text>
+  </g>
+
+  <!-- Feature badges -->
+  <g transform="translate(950, 160)">
+    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#BDC3C7">
+      ⚡ Zero Dependencies
+    </text>
+    <text x="0" y="25" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#BDC3C7">
+      🎯 Fluent API
+    </text>
+    <text x="0" y="50" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#BDC3C7">
+      💎 PHP 8.4+
+    </text>
+  </g>
+</svg>
