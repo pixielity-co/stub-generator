@@ -1,3 +1,7 @@
+<div align="center">
+
+![Stub Generator Banner](.github/assets/banner.svg)
+
 # Stub Generator
 
 **A powerful, fluent stub template processor for PHP with support for placeholders and optional sections**
@@ -7,6 +11,14 @@
 [![Downloads](https://img.shields.io/packagist/dt/pixielity/stub-generator?style=flat-square&logo=packagist&logoColor=white&label=downloads)](https://packagist.org/packages/pixielity/stub-generator)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-success?style=flat-square&logo=phpunit&logoColor=white)](https://github.com/pixielity-co/stub-generator/actions)
+
+[Features](#-features) •
+[Installation](#-installation) •
+[Quick Start](#-quick-start) •
+[Documentation](#-documentation) •
+[API Reference](#-api-reference)
+
+</div>
 
 ---
 
