@@ -1,0 +1,42 @@
+# Build directory
+/build/
+
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# PHPStan
+.phpstan.cache/
+phpstan.neon.dist
+
+# Rector
+.rector.cache/
+
+# Pint
+.pint.cache
+
+# PHPUnit
+.phpunit.cache/
+.coverage/
+coverage/
+phpunit.xml.dist
+
+# Infection
+.infection/
+infection.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/var/
