@@ -1,0 +1,6 @@
+Mixed format test:
+
+Primary: $NAME$
+Legacy: {{EMAIL}}
+
+Both formats work: $VALUE$ and {{VALUE}}

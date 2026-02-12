@@ -1,0 +1,5 @@
+Hello {{NAME}}!
+
+Your email is: {{EMAIL}}
+
+This stub uses legacy {{PLACEHOLDER}} format.

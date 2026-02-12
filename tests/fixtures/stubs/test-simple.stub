@@ -1,0 +1,5 @@
+Hello $NAME$!
+
+Your email is: $EMAIL$
+
+This is a simple test stub for placeholder replacement.

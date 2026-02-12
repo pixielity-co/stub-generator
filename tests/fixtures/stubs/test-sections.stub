@@ -1,0 +1,13 @@
+Main content here.
+
+# SECTION:optional
+This is optional content that can be removed.
+It includes $OPTIONAL_VALUE$.
+# END_SECTION:optional
+
+# SECTION:another
+This is another optional section.
+Value: $ANOTHER_VALUE$
+# END_SECTION:another
+
+End of content.
