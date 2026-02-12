@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PHPUnit Configuration for Stub Generator
+    ========================================
+    Test configuration with comprehensive coverage reporting
+    and strict testing standards.
+-->
+<phpunit
+    colors="true"
+    failOnRisky="true"
+    failOnWarning="false"
+    stopOnFailure="false"
+    executionOrder="random"
+    resolveDependencies="true"
+    cacheDirectory="build/phpunit"
+    bootstrap="vendor/autoload.php"
+    beStrictAboutCoverageMetadata="false"
+    beStrictAboutOutputDuringTests="true"
+    beStrictAboutChangesToGlobalState="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.5/phpunit.xsd">
+
+    <!-- Test Suites -->
+    <testsuites>
+        <!-- Unit test suite -->
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+
+        <!-- Integration test suite -->
+        <testsuite name="Integration">
+            <directory>tests/Integration</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- Configure source code scope -->
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+        <exclude>
+            <directory>vendor</directory>
+            <directory>build</directory>
+        </exclude>
+    </source>
+
+    <!-- PHP Configuration -->
+    <php>
+        <env name="APP_ENV" value="testing" />
+        <ini name="display_errors" value="1" />
+        <ini name="memory_limit" value="512M" />
+        <ini name="date.timezone" value="UTC" />
+        <ini name="error_reporting" value="-1" />
+    </php>
+
+    <!-- Coverage Report Configuration -->
+    <coverage pathCoverage="false"
+        ignoreDeprecatedCodeUnits="true"
+        disableCodeCoverageIgnore="false">
+        <report>
+            <html outputDirectory="coverage/html" lowUpperBound="50" highLowerBound="80" />
+            <clover outputFile="coverage/clover.xml" />
+            <cobertura outputFile="coverage/cobertura.xml" />
+            <text outputFile="coverage/coverage.txt" showUncoveredFiles="true"
+                showOnlySummary="false" />
+        </report>
+    </coverage>
+
+    <!-- Logging -->
+    <logging>
+        <junit outputFile="var/log/junit.xml" />
+        <testdoxHtml outputFile="var/log/testdox.html" />
+        <testdoxText outputFile="var/log/testdox.txt" />
+    </logging>
+</phpunit>
